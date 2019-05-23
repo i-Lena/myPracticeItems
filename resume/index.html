@@ -1,0 +1,367 @@
+<!--
+Author: lena
+Author URL : http://……
+Time: 2017.05
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume 简历</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/swipebox.css" type="text/css">
+
+    <!--js-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--<script src="js/bootstrap.js"></script>-->
+
+    <!--smooth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!--end-smooth-scrolling-->
+
+</head>
+<body>
+    <!--banner-->
+    <div id="home" class="banner">
+        <div class="banner-info">
+            <div class="container">
+                <div class="col-md-4 col-sm-4 header-left">
+                    <img src="images/imgme1.jpg" alt="" id="img-photo">
+                </div>
+                <div class="col-md-8 col-sm-8 header-right">
+                    <h2>Hello</h2>
+                    <h1>I'm Nana Lee</h1>
+                    <h6>Web Designer and Developer</h6>
+                    <ul class="address">
+                        <li>
+                            <ul class="address-text">
+                                <li><b>D.O.B</b></li>
+                                <li>19-06-1991</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>E.D.U</b></li>
+                                <li>Master Degree</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>SCHOOL</b></li>
+                                <li>Dalian University</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>MAJOR</b></li>
+                                <li>Computer Science and Technology</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>MOTTO</b></li>
+                                <li>A journey of a thousand miles begins with a single step.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   script 切换头像-->
+    <script type="text/javascript">
+        $("#img-photo").mouseover(function () {
+            $(this).attr("src","images/imgme.jpg");
+        });
+        $("#img-photo").mouseleave(function () {
+            $(this).attr("src","images/imgme1.jpg");
+        });
+    </script>
+    <!--  end-script 切换头像 -->
+    <!--end-banner-->
+    <!--top-nav-->
+    <div class="top-nav wow" data-spy="affix" data-offset-top="470" data-offset-bottom="170">
+        <div class="container">
+            <div class="navbar-header logo">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    Menu
+                </button>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="menu">
+                        <ul class="nav navbar">
+                            <li><a href="#about" class="scroll">About</a></li>
+                            <li><a href="#skills" class="scroll">Skills</a></li>
+                            <li><a href="#projects" class="scroll">My Projects</a></li>
+                            <li><a href="#contact" class="scroll">Contact</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-top-nav-->
+    <!--about-->
+    <div id="about" class="about">
+        <div class="container">
+            <h3 class="title">About Me</h3>
+            <div class="col-md-8 col-xs-8 about-left">
+                <div class="about_info">
+                    <p>相信“千里之行，始于足下”</p>
+                    <p>学习是充实而美妙的旅程</p>
+                    <p>前端贴近用户，所见即所得的体验更为奇妙</p>
+                    <p>喜欢灵感碰撞的时刻</p>
+                    <p>享受想法跃然屏上的过程</p>
+                    <p>期待在不停的时间里不断超越自己</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-4 about-right">
+                <img src="images/about_me.jpg" alt="">
+                <!--<ul>-->
+                    <!--<h5>Awards</h5>-->
+                    <!--<li><span class="glyphicon glyphicon-menu-right">1</span></li>-->
+                    <!--<li><span class="glyphicon glyphicon-menu-right">2</span></li>-->
+                    <!--<li><span class="glyphicon glyphicon-menu-right">3</span></li>-->
+                    <!--<li><span class="glyphicon glyphicon-menu-right">4</span></li>-->
+                    <!--<li><span class="glyphicon glyphicon-menu-right">5</span></li>-->
+                <!--</ul>-->
+            </div>
+
+        </div>
+    </div>
+    <!--end-about-->
+    <!--skills-->
+    <div class="skills" id="skills">
+        <div class="container">
+            <h3 class="title">Skills</h3>
+            <ul class="skills_info">
+                <li>✔ 能够熟练高效使用HTML及CSS完成静态页面的制作与设计编码，熟悉DIV+CSS的常用布局与动画;</li>
+                <li>✔ 了解HTML5与CSS3新特性，敢于尝试，能熟练使用部分新特性; </li>
+                <li>✔ 熟悉JavaScript，代码编写遵守规范；</li>
+                <li>✔ 了解JavaScript面向对象知识，学过Java、JSP等后端开发，做过相关demo；</li>
+                <li>✔ 熟练使用JQuery/Bootstrap等常见框架类库的使用；</li>
+                <li>✔ 计算机基础较好，对前端开发有极大热情，自学能力较强；</li>
+                <li>✔ 能够理解数据结构与算法设计，具有一定的软件工程意识;</li>
+                <li>✔ 日常使用WebStorm/Sublime进行开发，熟练使用FireBug等调试工具;</li>
+                <li>✔ 英语六级，熟练阅读和翻译英文技术资料;</li>
+                <li>✔ 优秀的沟通、学习和团队协作能力，工作积极主动，有责任心。</li>
+            </ul>
+            <ul class="skills_tools">
+                <li><span><img src="images/htmlcss.png" alt=""></span><p>HTML5+CSS3</p></li>
+                <li><span><img src="images/fw.png" alt=""></span><p>Fireworks</p></li>
+                <li><span><img src="images/js.png" alt=""></span><p>JavaScipt</p></li>
+                <li><span><img src="images/ws.png" alt=""></span><p>WebStorm</p></li>
+                <li><span><img src="images/b.png" alt=""></span><p>Bootstrap</p></li>
+                <li><span><img src="images/ps.png" alt=""></span><p>Photoshop</p></li>
+            </ul>
+        </div>
+    </div>
+    <!--end-skills-->
+    <!--my projects-->
+    <div id="projects" class="portfolio">
+        <div class="container">
+            <h3 class="title wow zoomInLeft animated" data-wow-delay="0.5s">My Projects</h3>
+            <div class="sap_tabs">
+                <div id="horizontalTab">
+                    <!--作品导航条-->
+
+                    <ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay="0.7s">
+                        <li class="resp-tab-item"><span>ALL</span></li>
+                        <li class="resp-tab-item"><span>HTML</span></li>
+                        <li class="resp-tab-item"><span>JS</span></li>
+                        <li class="resp-tab-item"><span>BOOTSTRAP</span></li>
+                        <li class="resp-tab-item"><span>WORDPRESS</span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+
+                    <!--!作品导航条结束-->
+                    <div class="resp-tabs-container">
+                        <div class="tab-1 resp-tab-content">
+                            <div class="tab_img">
+                                <!--1-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g1.jpg" class="swipebox" title="Z-life智能家居企业门户网站">
+                                            <img src="images/g1.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>Z-life智能家居企业门户网站</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--2-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g2.jpg" class="swipebox" title="微金所响应式网站首页">
+                                            <img src="images/g2.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>微金所响应式网站首页</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--3-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g3.jpg" class="swipebox" title="仿京东手机端页面">
+                                            <img src="images/g3.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>仿京东手机端页面</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--4-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g4.jpg" class="swipebox" title="博雅互动静态页面">
+                                            <img src="images/g4.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>博雅互动静态页面</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--5-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g5.jpg" class="swipebox" title="javascript编写打地鼠小游戏">
+                                            <img src="images/g5.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>javascript编写打地鼠小游戏</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--6-->
+                                <div class="col-md-4 portfolio-grids">
+                                    <div class="grid">
+                                        <a href="images/g6.jpg" class="swipebox" title="360安全导航效果实现">
+                                            <img src="images/g6.jpg" alt="" class="img-responsive" />
+                                            <div class="figcaption">
+                                                <h3>My<span>Projects</span></h3>
+                                                <p>360安全导航效果实现</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--7-->
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+<!--cichu 作品分类-->
+
+<!--cichu-->
+
+                    </div>
+                </div>
+
+            </div>
+            <!--ResponsiveTabs-->
+            <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                   $("#horizontalTab").easyResponsiveTabs({
+                      type: "default", //types: default, vertical, accordion
+                       width: "auto", //auto or any width like 600px
+                       fit: true  //100% fit in a container
+                   });
+                });
+            </script>
+            <!--end-ResponsiveTabs-->
+            <!--swipe box js-->
+            <script src="js/jquery.swipebox.min.js"></script>
+            <script type="text/javascript">
+                jQuery(function ($) {
+                    $(".swipebox").swipebox();
+                });
+            </script>
+            <!--end-swipe box js-->
+        </div>
+    </div>
+    <!--end-my projects-->
+
+    <!--contact-->
+    <div class="welcome contact" id="contact">
+        <div class="container">
+            <h3 class="title">Contact Us</h3>
+            <div class="contact-row">
+                <div class="col-md-6 contact_left">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-map-marker"></span>Dalian,Liaoning</li>
+                        <li><span class="glyphicon glyphicon-envelope"></span>352142607@qq.com</li>
+                        <li><span class="glyphicon glyphicon-globe"></span>www.iLynana.com</li>
+                        <li><span class="glyphicon glyphicon-phone"></span>18340852559</li>
+                        <li><span class="glyphicon glyphicon-comment"></span><img src="images/wechat.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 contact_right">
+
+                    <!--右边-->
+                    <div class="contact_one">
+                        <p>Say Hi To Me ~</p>
+                        <div class="contact_email">
+                            <div class="col-md-6 email_left">
+                                <input type="text" value="Your Name" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}"/>
+                                <input type="text" value="Subject" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Subject';}"/>
+                                <input type="text" value="Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email';}"/>
+                            </div>
+                            <div class="col-md-6 email_right">
+                                <textarea value="Your Message" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Message';}">Your Message</textarea>
+                            </div>
+                            <div class="col-md-12 contact_emailto"><a href="mailto://http:www.352142607.qq.com">Send Message</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-contact-->
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <p>&copy;2017 My Resume. All rights reserved | Design by <a href="#">http://www.iLynana.com</a></p>
+        </div>
+    </div>
+    <!--end-footer-->
+
+    <!--smooth-scrolling-of-move-up-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var defaults = {
+                containerID: "toTop",   // fading element id
+                containerHoverID: "toTopHover", // fading element hover id
+                scrollSpeed: 1200,
+                easingType: "linear"
+            };
+            $().UItoTop({easingType: "easeOutQuart"});
+        });
+    </script>
+    <!--end-smooth-scrolling-of-move-up-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
